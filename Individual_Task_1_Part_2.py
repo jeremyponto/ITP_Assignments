@@ -12,7 +12,6 @@ radians = degrees / 180 * 3.14
 print('Radians=', radians)
 
 # 2
-def students_scores(student1, student2, student3)
 print("Students' scores:")
 student1 = 80.0
 print(student1)
