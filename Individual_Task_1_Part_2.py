@@ -10,7 +10,6 @@ degrees = 150
 print('Degrees=', degrees)
 radians = degrees / 180 * 3.14
 print('Radians=', radians)
-radians(degrees)
 
 # 2
 def students_scores(student1, student2, student3)
