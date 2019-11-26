@@ -32,3 +32,11 @@ def histogram(lst):
     for element in lst:
         print('*' * element)
 histogram([4, 9, 7])
+
+# 7
+word_list = ["saya", "mau", "makan", "nasi", "goreng"]
+print(word_list)
+length_list = []
+for word in word_list:
+    length_list.append(len(word))
+print(length_list)
