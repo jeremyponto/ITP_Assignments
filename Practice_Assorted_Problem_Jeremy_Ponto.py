@@ -6,7 +6,7 @@ Created on Tue Nov 26 10:50:47 2019
 """
 
 # 1
-def List(List = []):
+def List(List):
     New_List = []
     for element in List:
         element = str(element)
@@ -26,3 +26,9 @@ def translate(text):
             letters = letters + letter + 'o' + letter
     print(letters)
 translate("this is fun")
+
+# 6
+def histogram(lst):
+    for element in lst:
+        print('*' * element)
+histogram([4, 9, 7])
