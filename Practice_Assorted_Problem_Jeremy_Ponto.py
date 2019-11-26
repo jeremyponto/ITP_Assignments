@@ -40,3 +40,15 @@ length_list = []
 for word in word_list:
     length_list.append(len(word))
 print(length_list)
+
+# 8
+lwords = ["saya", "mau", "makan", "nasi", "goreng"]
+print(lwords)
+def find_longest_word(lwords):
+    longest_length = 0
+    for word in lwords:
+        if len(word) > longest_length:
+            longest_length = len(word)
+    return longest_length
+longest_length = find_longest_word(lwords)
+print(longest_length)
