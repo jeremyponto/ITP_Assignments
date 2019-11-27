@@ -57,7 +57,7 @@ def histogram(lst):
 histogram([4, 9, 7])
 
 # 7
-word_list = ["saya", "mau", "makan", "nasi", "goreng"]
+word_list = ["I", "want", "to", "eat", "fried", "rice"]
 print(word_list)
 length_list = []
 for word in word_list:
@@ -65,7 +65,7 @@ for word in word_list:
 print(length_list)
 
 # 8
-lwords = ["saya", "mau", "makan", "nasi", "goreng"]
+lwords = ["I", "want", "to", "eat", "fried", "rice"]
 print(lwords)
 def find_longest_word(lwords):
     longest_length = 0
@@ -76,11 +76,11 @@ def find_longest_word(lwords):
 print(find_longest_word(lwords))
 
 # 9
-lwords = ["saya", "mau", "makan", "nasi", "goreng"]
+lwords = ["I", "want", "to", "eat", "fried", "rice"]
 print(lwords)
 def filter_long_word(lwords):
     new_lwords = []
-    n = 4
+    n = 3
     for word in lwords:
         if len(word) > n:
             new_lwords.append(word)
