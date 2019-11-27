@@ -18,9 +18,9 @@ def translate(text):
     letters = ""
     for letter in text:
         if letter in vowels:
-            letters = letters + letter
+            letters += letter
         else:
-            letters = letters + letter + 'o' + letter
+            letters += letter + 'o' + letter
     print(letters)
 translate("this is fun")
 
