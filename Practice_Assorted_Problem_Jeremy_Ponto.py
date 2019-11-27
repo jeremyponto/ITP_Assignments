@@ -24,6 +24,21 @@ def translate(text):
     print(letters)
 translate("this is fun")
 
+# 3
+import calendar
+year_month = [2019, 11]
+print(calendar.month(year_month[0], year_month[1], w=0, l=0))
+
+# 4
+a = ['a', 'b', 'c']
+def is_member(x, a):
+    for i in a:
+        if i == x:
+            return True
+    return False
+print(is_member('c', a))
+print(is_member('d', a))
+
 # 6
 def histogram(lst):
     for element in lst:
