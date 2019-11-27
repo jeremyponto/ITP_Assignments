@@ -39,6 +39,17 @@ def is_member(x, a):
 print(is_member('c', a))
 print(is_member('d', a))
 
+# 5
+lst1 = [1, 2, 3]
+lst2 = [3, 4, 5]
+def overlapping(lst1, lst2):
+    for i in lst1:
+        for j in lst2:
+            if i == j:
+                return True
+    return False
+print(overlapping(lst1, lst2))
+
 # 6
 def histogram(lst):
     for element in lst:
