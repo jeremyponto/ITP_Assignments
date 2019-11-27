@@ -47,8 +47,7 @@ def find_longest_word(lwords):
         if len(word) > longest_length:
             longest_length = len(word)
     return longest_length
-longest_length = find_longest_word(lwords)
-print(longest_length)
+print(find_longest_word(lwords))
 
 # 9
 lwords = ["saya", "mau", "makan", "nasi", "goreng"]
@@ -60,5 +59,4 @@ def filter_long_word(lwords):
         if len(word) > n:
             new_lwords.append(word)
     return new_lwords
-new_lwords = filter_long_word(lwords)
-print(new_lwords)
+print(filter_long_word(lwords))
