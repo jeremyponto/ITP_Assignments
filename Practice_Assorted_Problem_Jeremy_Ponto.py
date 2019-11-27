@@ -86,3 +86,61 @@ def filter_long_word(lwords):
             new_lwords.append(word)
     return new_lwords
 print(filter_long_word(lwords))
+
+# 10
+sentence = "The quick brown fox jumps over the lazy dog"
+sentence = sentence.casefold()
+sentence = sentence.replace(" ", "")
+def pangram(sentence):
+    alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    for letter in sentence:
+        if letter in alphabets:
+            alphabets.remove(letter)
+    if len(alphabets) == 0:
+        print("pangram")
+    else:
+        print("not pangram")
+pangram(sentence)
+
+# 11
+string = "I want to eat fried rice"
+string = string.casefold()
+def char_freq(string):
+    freq_list = {}
+    for char in string:
+        if char in freq_list:
+            freq_list[char] += 1
+        else:
+            freq_list[char] = 1
+    print(freq_list)
+char_freq(string)
+
+# 13
+verbs = ["try", "brush", "run", "fix"]
+def makeForms(verbs):
+    new_verbs = []
+    for verb in verbs:
+        if verb[-1:] == 'y':
+            new_verbs.append(verb[:-1] + "ies")
+        elif verb[-1:] in ['o', 's', 'x', 'z'] or verb[-2:] in ["ch", "sh"]:
+            new_verbs.append(verb + "es")
+        else:
+            new_verbs.append(verb + 's')
+    print(new_verbs)
+makeForms(verbs)
+
+# 14
+def makeForming():
+    verbs = ["go", "lie", "see", "move", "hug"]
+    new_verbs = []
+    for verb in verbs:
+        if verb[-1:] == 'e' and verb[-2:] != "ie" and verb not in ["be", "see", "flee", "knee"]:
+            new_verbs.append(verb[:-1] + "ing")
+        elif verb[-2:] == "ie":
+            new_verbs.append(verb[:-2] + "ying")
+        elif verb[-3:-2] and verb [-1:] not in ['a', 'i', 'u', 'e', 'o'] and verb[-2:-1] in ['a', 'i', 'u', 'e', 'o']:
+            new_verbs.append(verb + verb[-1] + "ing")
+        else:
+            new_verbs.append(verb + "ing")
+    print(new_verbs)
+makeForming()
