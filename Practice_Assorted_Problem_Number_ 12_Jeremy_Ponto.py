@@ -6,9 +6,9 @@ Created on Sun Dec  1 20:14:33 2019
 """
 
 alphabets = []
-sentence = str(input("Input sentence : "))
+sentence = str(input(""))
 sentence = sentence.casefold()
-rot = int(input("Input amount of shift : "))
+rot = int(input(""))
 new_alphabets = []
 def init_list(alphabets):
     for i in range(97, 123, 1):
