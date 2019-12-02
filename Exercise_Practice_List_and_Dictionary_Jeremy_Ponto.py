@@ -177,8 +177,7 @@ print(get_letter_grade(score))
 def get_class_average(students):
     results = []
     for student in students:
-        score = get_average(student)
-        results.append(score)
+        results.append(get_average(student))
     return average(results)
 class_average = get_class_average(students)
 print(class_average)
